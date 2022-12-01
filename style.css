@@ -2,6 +2,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Merienda", cursive;
+  box-sizing: border-box;
 }
 
 a {
@@ -106,7 +107,21 @@ ul {
 }
 
 .recommendation {
-  margin-left: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  padding: 15px;
+  margin: 0;
+  color: white;
+  font-family: "Cookie", cursive;
+  font-size: 28px;
+  background: rgb(68, 164, 82);
+  background: linear-gradient(
+    0deg,
+    rgb(113, 227, 130) 0%,
+    rgba(33, 111, 20, 0.9925012241224614) 100%
+  );
 }
 
 .container {
@@ -114,29 +129,38 @@ ul {
   margin: auto;
   padding-bottom: 20px;
 }
-.posts {
-  display: flex;
-  /* width: 80%;
-  margin: auto; */
-}
+/* .posts {
+  display: flex; 
 
-.posts-content {
-  width: 60%;
-  margin-right: 20px;
-}
+} */
 
-article {
+/* article {
   display: flex;
   padding: 10px 10px;
   border-bottom: 1px solid gray;
+} */
+.posts {
+  padding-top: 20px;
+  background-image: url("./images/pattern1.png");
+  background-repeat: repeat;
 }
 
+article {
+  width: 80%;
+  margin: auto;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  background-color: rgb(163, 186, 163);
+  box-shadow: 10px 5px 8px rgb(75, 73, 73);
+}
 .art-img {
-  width: 600px;
+  width: 100%;
   margin-right: 10px;
 }
 
-.art-content {
+.art-img img {
+  border-radius: 10px 10px 0 0;
 }
 
 .tittle {
@@ -144,12 +168,17 @@ article {
   font-weight: 900;
 }
 
-.side-links {
+/* .side-links {
   width: 40%;
   display: flex;
   justify-content: space-between;
-}
+} */
 
+.side-links {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 10px 0 10px;
+}
 .country {
   padding: 0 10px;
 }
@@ -166,47 +195,98 @@ article {
   margin-top: 0;
 }
 
+.btn {
+  width: 100%;
+  padding: 10px 5px;
+  border-style: none;
+  border-radius: 5px;
+  background-color: green;
+  font-size: 16px;
+}
+
 .card-section {
-  margin-top: 20px;
-  padding: 0 10px;
-  background-color: rgb(221, 248, 196);
+  background-image: url("./images/pattern2.jpg");
+  background-repeat: repeat;
+
+  /* background-color: rgb(163, 186, 163); */
 }
 
 .card-list {
-  display: flex;
-  justify-content: space-between;
+  padding-top: 20px;
 }
 
+/* .card-list {
+  display: flex;
+  justify-content: space-between;
+} */
+
 .card {
-  width: 300px;
-  min-height: 300px;
+  width: 80%;
+  margin: auto;
   background: white;
   padding-bottom: 10px;
-  box-shadow: 5px 5px 10px 5px rgb(123, 119, 119);
+  margin-bottom: 20px;
+  box-shadow: 10px 5px 8px rgb(75, 73, 73);
+  border-radius: 10px;
 }
 
 .card img {
   height: 200px;
   border-radius: 10px 10px 0 0;
+  object-fit: cover;
 }
 
 .btn-card {
-  background: gray;
+  background-color: green;
   font-size: 18px;
   padding: 8px 6px;
   border: none;
   border-radius: 5px;
   width: 100%;
 }
+.gallery {
+  display: flex;
+  height: 30px;
+  justify-content: center;
+  color: white;
+  padding: 15px;
+  margin: 0;
+  background: rgb(68, 164, 82);
+  background: linear-gradient(
+    0deg,
+    rgb(113, 227, 130) 0%,
+    rgba(33, 111, 20, 0.9925012241224614) 100%
+  );
+}
 
 .subscription {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
+  margin: 0;
+  padding-bottom: 20px;
+  background-image: url("./images/pattern1.png");
+}
+
+input {
+  display: block;
+  margin: 0 0 10px 0;
+  border: none;
+  border-radius: 5px;
+}
+.sub-btn {
+  display: block;
+  background-color: green;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  margin: auto;
 }
 
 footer {
-  height: 35px;
+  height: 30px;
+
   background: rgb(68, 164, 82);
   background: linear-gradient(
     0deg,
@@ -217,4 +297,8 @@ footer {
   justify-content: center;
   align-items: center;
   padding: 15px;
+
+  color: white;
+  font-family: "Cookie", cursive;
+  font-size: 20px;
 }
