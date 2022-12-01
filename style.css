@@ -78,7 +78,7 @@ ul {
 }
 
 .section {
-  background-image: url("images/bg.jpg");
+  background-image: url("./images/bg.jpg");
   height: 400px;
   width: 100%;
   background-repeat: no-repeat;
